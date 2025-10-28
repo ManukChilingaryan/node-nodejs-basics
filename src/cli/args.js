@@ -2,10 +2,17 @@
 
 const parseArgs = () => {
   // Write your code here
-  
+  let args = process.argv.slice(2);
+  let result = [];
+  for( let i = 0; i < args.length; i+=2)
+  {
+      result.push(`${args[i].slice(2)} is ${args[i+1]}`)
+  }
+
+  console.log(result.join(', '))
 };
 
 parseArgs();
 
-console.log(process)
-console.log(process.argv)
+//console.log(process)
+//console.log(process.argv)

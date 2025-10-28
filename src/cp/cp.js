@@ -1,4 +1,9 @@
+
+import spawn from "child-process"
 const spawnChildProcess = async (args) => {
+
+  let child = spawn('node', './script.js', args)
+   
   // Write your code here
 };
 
